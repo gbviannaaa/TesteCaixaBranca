@@ -154,4 +154,27 @@ A base de caminhos consiste nos caminhos independentes que podem ser seguidos no
 2. **Caminho 2**: Erro de conexão ao banco — Falha na conexão ao banco de dados e exibição da mensagem de erro.
 3. **Caminho 3**: Erro na consulta SQL — Falha na execução da consulta e exibição da falha na autenticação.
 
+# Teste de Caixa Branca - Conexão com Banco de Dados MySQL
+
+Este repositório contém o código de um projeto em Java que realiza a autenticação de usuários em um banco de dados MySQL. O objetivo é verificar as credenciais de login e senha de um usuário e retornar o nome do usuário autenticado.
+
+## Tecnologias Utilizadas
+
+- **Java**: Linguagem principal utilizada no desenvolvimento.
+- **MySQL**: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar as credenciais de login dos usuários.
+
+## Descrição do Projeto
+
+O projeto é composto por duas classes principais:
+
+- **`TesteCaixaBranca`**: Classe responsável por testar a autenticação do usuário.
+- **`User`**: Classe que gerencia a conexão com o banco de dados, executa as consultas e retorna as informações do usuário.
+
+A conexão é realizada com o banco de dados MySQL, e a autenticação ocorre verificando se o `login` e a `senha` correspondem a um usuário registrado na tabela `usuarios`.
+
+## Como Rodar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone <url-do-repositorio>
 
